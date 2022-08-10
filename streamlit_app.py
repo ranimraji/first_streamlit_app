@@ -24,8 +24,7 @@ streamlit.dataframe(fruits_to_show)
 
 # New Section to display fruityvice api response
 import requests
-fruity_vice_response = request.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_response)
-
 
 
